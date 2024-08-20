@@ -7,13 +7,13 @@ Using concepts such as Authenication, Social Accounts, With React, Django Channe
 _**This is for me committing to django and fullstack development**__
 
 ## Current Projects Planned
--**AllAuth implementation with GitHub**
--**Calculator Application**
--**Weather Application**
--**Pinterest Like Application**
--**Social Media Application**
--**YouTube Downloader Application**
--_**And So on...**_
+-**AllAuth implementation with GitHub**<br>
+-**Calculator Application**<br>
+-**Weather Application**<br>
+-**Pinterest Like Application**<br>
+-**Social Media Application**<br>
+-**YouTube Downloader Application**<br>
+-_**And So on...**_<br>
 
 ## References:
 -<a href="https://docs.djangoproject.com/en/5.1/">Django</a>
