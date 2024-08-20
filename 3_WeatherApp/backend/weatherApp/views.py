@@ -54,3 +54,9 @@ def convert_farenhit_to_celcius(temp: int) -> int:
     res = (temp-32) * (5/9)
     
     return round(res)
+
+def test_tailwind(request):
+    return render(
+        request,
+        "weatherApp/base.html"
+    )
