@@ -1,0 +1,114 @@
+[33mcommit fba9f36136d19fd182f624c07c6270adc962b275[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: 75marsel <jericgappi@gmail.com>
+Date:   Tue Aug 20 15:24:11 2024 +0800
+
+    Added Initial version of Weather App
+
+ 3_WeatherApp/README.MD                             |  18 [32m+++[m
+ 3_WeatherApp/backend/backend/__init__.py           |   0
+ 3_WeatherApp/backend/backend/asgi.py               |  16 [32m+++[m
+ 3_WeatherApp/backend/backend/settings.py           | 128 [32m+++++++++++++++++++++[m
+ 3_WeatherApp/backend/backend/urls.py               |  23 [32m++++[m
+ 3_WeatherApp/backend/backend/wsgi.py               |  16 [32m+++[m
+ 3_WeatherApp/backend/manage.py                     |  22 [32m++++[m
+ 3_WeatherApp/backend/weatherApp/__init__.py        |   0
+ 3_WeatherApp/backend/weatherApp/admin.py           |   5 [32m+[m
+ 3_WeatherApp/backend/weatherApp/apps.py            |   6 [32m+[m
+ 3_WeatherApp/backend/weatherApp/forms.py           |  19 [32m+++[m
+ .../backend/weatherApp/migrations/0001_initial.py  |  24 [32m++++[m
+ .../backend/weatherApp/migrations/__init__.py      |   0
+ 3_WeatherApp/backend/weatherApp/models.py          |  17 [32m+++[m
+ .../weatherApp/templates/weatherApp/index.html     |  75 [32m++++++++++++[m
+ 3_WeatherApp/backend/weatherApp/tests.py           |   3 [32m+[m
+ 3_WeatherApp/backend/weatherApp/urls.py            |   6 [32m+[m
+ 3_WeatherApp/backend/weatherApp/views.py           |  56 [32m+++++++++[m
+ 3_WeatherApp/main.py                               |  24 [32m++++[m
+ 19 files changed, 458 insertions(+)
+
+[33mcommit 26d20aa80deabb0677b16e00b4fd03962e5f3f9a[m
+Author: 75marsel <jericgappi@gmail.com>
+Date:   Mon Aug 19 18:16:06 2024 +0800
+
+    Added Calculator App using Django, React, Tailwind based from a tutorial, will improve soon
+
+ 2_Calculator/.gitignore                            |     3 [32m+[m
+ 2_Calculator/README.MD                             |    19 [32m+[m
+ 2_Calculator/backend/backend/__init__.py           |     0
+ 2_Calculator/backend/backend/asgi.py               |    16 [32m+[m
+ 2_Calculator/backend/backend/settings.py           |   136 [32m+[m
+ 2_Calculator/backend/backend/urls.py               |    23 [32m+[m
+ 2_Calculator/backend/backend/wsgi.py               |    16 [32m+[m
+ 2_Calculator/backend/calculator/__init__.py        |     0
+ 2_Calculator/backend/calculator/admin.py           |     3 [32m+[m
+ 2_Calculator/backend/calculator/apps.py            |     6 [32m+[m
+ .../backend/calculator/migrations/__init__.py      |     0
+ 2_Calculator/backend/calculator/models.py          |     3 [32m+[m
+ 2_Calculator/backend/calculator/tests.py           |     3 [32m+[m
+ 2_Calculator/backend/calculator/urls.py            |     6 [32m+[m
+ 2_Calculator/backend/calculator/views.py           |    20 [32m+[m
+ 2_Calculator/backend/manage.py                     |    22 [32m+[m
+ 2_Calculator/frontend/.gitignore                   |    23 [32m+[m
+ 2_Calculator/frontend/README.md                    |    70 [32m+[m
+ 2_Calculator/frontend/package-lock.json            | 19791 [32m+++++++++++++++++++[m
+ 2_Calculator/frontend/package.json                 |    41 [32m+[m
+ 2_Calculator/frontend/public/favicon.ico           |   Bin [31m0[m -> [32m3870[m bytes
+ 2_Calculator/frontend/public/index.html            |    43 [32m+[m
+ 2_Calculator/frontend/public/logo192.png           |   Bin [31m0[m -> [32m5347[m bytes
+ 2_Calculator/frontend/public/logo512.png           |   Bin [31m0[m -> [32m9664[m bytes
+ 2_Calculator/frontend/public/manifest.json         |    25 [32m+[m
+ 2_Calculator/frontend/public/robots.txt            |     3 [32m+[m
+ 2_Calculator/frontend/src/App.css                  |    38 [32m+[m
+ 2_Calculator/frontend/src/App.js                   |    99 [32m+[m
+ 2_Calculator/frontend/src/App.test.js              |     8 [32m+[m
+ 2_Calculator/frontend/src/index.css                |    17 [32m+[m
+ 2_Calculator/frontend/src/index.js                 |    17 [32m+[m
+ 2_Calculator/frontend/src/logo.svg                 |     1 [32m+[m
+ 2_Calculator/frontend/src/output.css               |   713 [32m+[m
+ 2_Calculator/frontend/src/reportWebVitals.js       |    13 [32m+[m
+ 2_Calculator/frontend/src/setupTests.js            |     5 [32m+[m
+ 2_Calculator/frontend/tailwind.config.js           |     8 [32m+[m
+ 36 files changed, 21191 insertions(+)
+
+[33mcommit 17d437ad84e17cefcc83a4897755988dd15b2129[m
+Author: 75marsel <jericgappi@gmail.com>
+Date:   Sun Aug 18 14:58:16 2024 +0800
+
+    Inital commit, 1st application of ?
+
+ 1_AullAuth/README.MD | 19 [32m+++++++++++++++++++[m
+ 1 file changed, 19 insertions(+)
+
+[33mcommit 05c68e4edb44ee761edb87b878f730f819d53782[m
+Author: 75marsel <jericgappi@gmail.com>
+Date:   Sun Aug 18 14:55:05 2024 +0800
+
+    Inital commit, 1st application of ?
+
+ LICENSE.txt | 674 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 674 insertions(+)
+
+[33mcommit 2ae3a115e86e90890b95af4c6a4c70abce52fbca[m
+Author: 75marsel <jericgappi@gmail.com>
+Date:   Sun Aug 18 14:49:54 2024 +0800
+
+    Inital commit, 1st application of ?
+
+ .gitignore                                         |   4 [32m+[m
+ 1_AullAuth/authProject/authApp/__init__.py         |   0
+ 1_AullAuth/authProject/authApp/admin.py            |   3 [32m+[m
+ 1_AullAuth/authProject/authApp/apps.py             |   6 [32m+[m
+ .../authProject/authApp/migrations/__init__.py     |   0
+ 1_AullAuth/authProject/authApp/models.py           |   3 [32m+[m
+ .../authApp/templates/authApp/dashboard.html       |  14 [32m++[m
+ .../authApp/templates/authApp/index.html           |  23 [32m+++[m
+ 1_AullAuth/authProject/authApp/tests.py            |   3 [32m+[m
+ 1_AullAuth/authProject/authApp/urls.py             |   7 [32m+[m
+ 1_AullAuth/authProject/authApp/views.py            |  34 [32m+++++[m
+ 1_AullAuth/authProject/authProject/__init__.py     |   0
+ 1_AullAuth/authProject/authProject/asgi.py         |  16 [32m++[m
+ 1_AullAuth/authProject/authProject/settings.py     | 167 [32m+++++++++++++++++++++[m
+ 1_AullAuth/authProject/authProject/urls.py         |  24 [32m+++[m
+ 1_AullAuth/authProject/authProject/wsgi.py         |  16 [32m++[m
+ 1_AullAuth/authProject/manage.py                   |  22 [32m+++[m
+ README.MD                                          |  22 [32m+++[m
+ 18 files changed, 364 insertions(+)
