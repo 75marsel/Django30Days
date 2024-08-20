@@ -16,3 +16,4 @@ Will add error handling and tailwind css and might as well put react as front
 ## References:
 -<a href="https://docs.djangoproject.com/en/5.1/">Django</a>
 -<a href="https://openweathermap.org/">OpenWeatherAPI</a>
+-<a href="https://django-tailwind.readthedocs.io/en/latest/installation.html">Django-Tailwind</a>
