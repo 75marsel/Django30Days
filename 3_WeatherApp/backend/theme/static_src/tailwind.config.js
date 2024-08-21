@@ -43,6 +43,9 @@ module.exports = {
     ],
     theme: {
         extend: {},
+        container: {
+            center: true,
+          },
     },
     plugins: [
         /**
@@ -53,5 +56,9 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
+        require("daisyui"),
     ],
+    daisyui: {
+        themes: ["light", "dark", "winter"],
+    },
 }

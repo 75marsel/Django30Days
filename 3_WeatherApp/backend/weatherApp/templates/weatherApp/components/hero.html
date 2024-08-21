@@ -1,0 +1,16 @@
+{% load static %}
+
+<div class="hero bg-base-200 min-h-screen">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img
+        src="{% static 'weatherApp/wicon.png'%}"
+        class="max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <h1 class="text-5xl font-bold">Weather App with Django</h1>
+        <p class="py-6">
+          A Weather application powered by Django backend and OpenWeatherMap API for the weather result and Tailwind CSS for styling and components.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </div>

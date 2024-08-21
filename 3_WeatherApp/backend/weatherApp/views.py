@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from dotenv import load_dotenv
+from django.http import JsonResponse
 import os, requests
 from .models import City
 from .forms import CityForm
@@ -17,12 +18,12 @@ def index_view(request):
     # prepare the blank form
     form = CityForm()
     
-    # if the user attempts a search
-    if request.method == "POST":
-        form = CityForm(request.POST)
-        # check if the form is valid
-        if form.is_valid():
-            form.save()
+    # # if the user attempts a search
+    # if request.method == "POST":
+    #     form = CityForm(request.POST)
+    #     # check if the form is valid
+    #     if form.is_valid():
+    #         form.save()
         
     weather_data = []
     
