@@ -42,10 +42,17 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
-        container: {
-            center: true,
-          },
+        extend: {
+            animation: {
+                fade: 'fadeIn 0.5s ease-out forwards',
+              },
+              keyframes: (theme) => ({
+                fadeIn: {
+                '0%': { transform: 'scale(0.8)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' }
+                },
+              }),
+        },
     },
     plugins: [
         /**

@@ -1,6 +1,14 @@
 from allauth.socialaccount.models import SocialAccount
 from django.shortcuts import render
+from allauth.account.views import SignupView, LoginView
 
+
+# class MySignupView(SignupView):
+#     template_name = '/allauth/account/login.html'
+
+
+# class MyLoginView(LoginView):
+#     template_name = '/allauth/account/login.html'
 
 def index_view(request):
     github_username = None

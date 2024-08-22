@@ -1,24 +1,34 @@
 {% extends "weatherApp/base.html" %}
+{% load static %}
 
+{% block scripts %}
+<script src="{% static 'weatherApp/script.js' %}" defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+{% endblock scripts %}
 
 {% block content %}
     {% include "weatherApp/components/hero.html" %}
 
     <div class="container mx-auto my-10 px-4">
         <div class="mb-10">
-            <form action="POST" class="flex justify-center" id="search-form">
+            <form action="POST" class="flex justify-center" id="search-form" autocomplete="off">
                 {% csrf_token %}
                 <input
                     type="text"
+                    id="search-input"
                     placeholder="Type here"
                     class="input input-bordered input-info w-full max-w-xs" />
+                
                 <button type="submit" class="btn btn-primary ml-2">Search</button>
+                  
             </form>
+            <div id="results-box" class="w-1/2 shadow-lg shadow-black/25 transition-all duration-500 rounded-md p-4 my-4 m-auto hidden">
+            </div>
         </div>
     
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="cards-container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 min-h-[600px]" id="cards-container">
             {% for weather in weather_data %}
-            <div class="card bg-base-100 w-full max-w-md mx-auto shadow-xl">
+            <div class="card bg-base-100 w-full max-w-md mx-auto shadow-xl scale-0 opacity-0 animate-fade" style="animation-delay: 0.1s; max-height: 180px;">
                 <div class="grid grid-cols-4">
                     <img
                         class="w-full max-w-[200px] max-h-[200px] object-cover"

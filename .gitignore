@@ -2,3 +2,5 @@ env/
 .env
 *.sqlite3
 __pycache__/
+links.txt
+progress.txt
